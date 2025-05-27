@@ -498,6 +498,7 @@ main {
 
 .subscribe-form {
   display: flex;
+  gap: 24px;
 }
 
 .subscribe-label {
@@ -682,6 +683,10 @@ main {
   border-color: var(--primary-brand);
 }
 
+.comment-field {
+  margin-bottom: 16px;
+}
+
 .checkbox-wrapper {
   margin-bottom: 24px;
   font-size: 12px;
@@ -714,6 +719,10 @@ input[type="checkbox"]:checked + label .custom-checkbox {
 .policy-link {
   color: var(--primary-brand);
   text-decoration: underline;
+}
+
+.privacy-label {
+  color: var(--subtle-text);
 }
 
 .submit-btn {
