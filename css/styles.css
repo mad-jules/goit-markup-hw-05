@@ -75,6 +75,16 @@ main {
   flex-grow: 1;
 }
 
+.btn-general {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-general:hover,
+.btn-general:focus {
+  background-color: var(--pressed-state);
+  border: none;
+}
+
 /* HEADER */
 
 .header {
@@ -177,6 +187,7 @@ main {
 .contacts {
   margin-left: auto;
 }
+
 /* HERO */
 
 .hero {
@@ -223,12 +234,6 @@ main {
   min-height: 56px;
   border: none;
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--pressed-state);
 }
 
 .subtitle {
@@ -296,6 +301,7 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 24px;
 }
 
 .title {
@@ -322,10 +328,6 @@ main {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.team-list-item:not(:nth-child(4n)) {
-  margin-right: 24px;
-}
-
 .team-member {
   padding: 32px 0;
   text-align: center;
@@ -340,7 +342,7 @@ main {
   justify-content: center;
   gap: 24px;
   line-height: 0;
-  margin-right: 80px;
+  margin: 0 auto;
 }
 
 .socialmedia-link {
@@ -372,13 +374,6 @@ main {
 
 .footer-container .team-icon-list {
   gap: 16px;
-}
-
-.social-media > h3 {
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--white-background);
-  margin-bottom: 16px;
 }
 
 .socialmedia-icon {
@@ -474,6 +469,10 @@ main {
 .footer-container {
   display: flex;
   align-items: baseline;
+}
+
+.socialmedia {
+  margin-right: 80px;
 }
 
 .socialmedia-text {
